@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des contacts</title>
+    <link rel="stylesheet" href="C:\Users\ASUS\Desktop\Ing1\web\styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="C:\Users\ASUS\Desktop\Ing1\web\script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <h3>Le carnet d'adresses locales</h3>
+        </div>
+        <div>
+            <img src="menu_icon.png" alt="Menu" width="80" height="80">
+        </div>
+    </div>
+    
+    <div class="title">
+        <h1>Gérer la liste de contacts</h1>
+    </div>
+
+    <div class="btn-container">
+        <a href="#" class="btn add-contact-btn"><img src="plus-icon.png" alt="ajouter" width="30" height="30"></a>
+        <a href="#" class="btn delete-all-btn"><img src="trash_icon.png" alt="Supprimer" width="30" height="30" ></a>
+    </div>
+
+    <div class="contacts-container">
+      <h2>Contacts enregistrés</h2>
+        <p id="noContactsText">Aucun contact enregistré</p>
+        <span id="contacts"></span>
+  </div>
+  
+    <div class="form-container" id="contactForm">
+        <form action="#">
+          <fieldset>
+            <legend> Saisie/modification d'un contact </legend>
+            <label for="civilite">Civilité</label>
+            <select id="civilite" name="civilite">
+              <option value="madame">Madame</option>
+              <option value="mademoiselle">Mademoiselle</option>
+              <option value="monsieur">Monsieur</option>
+            </select>
+            <label for="prenom">Prénom </label>
+            <input type="text" id="prenom" name="prenom">
+    
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom">
+    
+            <label for="telephone">Numéro de téléphone</label>
+            <input type="text" id="telephone" name="telephone">
+    
+            <input type="reset" value="Effacer" class="btn">
+            <input type="submit" value="Enregistrer" class="btn">
+          </fieldset>
+        </form>
+      </div>
+      <div class="détail-contact" id="contact-detail">
+        <h2>Détail du contact</h2>
+        <input type="submit" value="Modifier" class="btn">
+    
+      </div>
+
+  
+</body>
